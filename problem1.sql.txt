@@ -1,0 +1,7 @@
+-- Problem: Find second highest salary
+-- Platform: LeetCode
+-- Date: 2026-02-06
+
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
